@@ -1,0 +1,455 @@
+/* globais */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+
+body {
+    background: #f2f2f2;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    line-height: 1.0;
+    font-size: 18px;
+    place-content: center;
+}
+
+/* textos */
+
+.eg-text {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.g-text {
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.med-text {
+    font-size: 1.85rem;
+    font-weight: 500;
+}
+
+.p-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+
+
+.container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 55px;
+    gap: 2rem;
+    grid-template-areas:
+    "item-7 item-1 item-1 item-4"
+    "item-7 item-1 item-1 item-4"
+    "item-7 item-1 item-1 item-4"
+    "item-7 item-1 item-1 item-4"
+    "item-7 item-2 item-3 item-4"
+    "item-8 item-2 item-3 item-4"
+    "item-8 item-2 item-3 item-4"
+    "item-8 item-6 item-5 item-5"
+    "item-8 item-6 item-5 item-5"
+    "item-8 item-6 item-5 item-5";
+    padding: 20px;
+    max-width: 1080px;
+    margin: 1rem auto;
+}
+
+
+
+.item-1 {
+    grid-area: item-1;
+}
+
+.item-2 {
+    grid-area: item-2;
+}
+
+.item-3 {
+    grid-area: item-3;
+}
+
+.item-4 {
+    grid-area: item-4;
+}
+
+.item-5 {
+    grid-area: item-5;
+}
+
+.item-6 {
+    grid-area: item-6;
+}
+
+.item-7 {
+    grid-area: item-7;
+}
+
+.item-8 {
+    grid-area: item-8;
+}
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.item img {
+  display: block;
+}
+
+
+/* Item 1 */
+
+.item-1 {
+    background: #7B2FF7;
+    color: #fff;
+}
+
+.item-1 h1 {
+    
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.item-1 h1 strong{
+    color: #ffe066;
+    font-weight: 400;
+}
+
+.item-1 span {
+  font-style: italic;
+}
+
+.item-1 p {
+    padding-top: 10px;
+}
+
+.item-1 img {
+    width: 35%;
+}
+
+/* Item 2 */
+
+.item-2 {
+    background-color: #fff;
+    position: relative;
+}
+
+.item-2 p{
+    padding-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px
+}
+
+.item-2 img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120%;
+}
+
+
+
+/* Item 3 */
+
+.item-3 {
+    background-color: #fccb6b;
+    position: relative;
+}
+
+.item-3 p {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.item-3 img {
+    position: absolute;
+    width: 85%;
+    top: 140px;
+}
+
+
+
+/* Item 4 */
+
+.item-4 {
+    background-color: #e5dbff;
+    position: relative;
+}
+
+.item-4 h2 {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.item-4 p {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+}
+
+.item-4 img {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    width: 150%;
+}
+
+
+
+/* Item 5 */
+
+.item-5 {
+    background-color: #7B2FF7;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-5 p {
+    color: #fff;
+    padding-left: 10px;
+}
+
+
+.item-5 img {
+    height: 100%;
+    
+}
+
+/* Item 6 */
+
+.item-6 {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;     
+    text-align: left;            
+}
+
+.item-6 span {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.item-6 p {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.item-6 img {
+    width: 80%;
+}
+
+/* Item 7 */
+
+.item-7 {
+    background-color: #fcece4;
+}
+
+.item-7 p {
+    margin-bottom: 20px;
+}
+
+.item-7 span {
+    color: #7B2FF7;
+    font-style: italic;
+}
+
+.item-7 img {
+    width: 90%; 
+}
+
+
+/* Item 8 */
+
+.item-8 {
+    background-color: #fccb6b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.item-8 p {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.item-8 img {
+    width: 100%;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 960px) { 
+    .container {
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 0.7fr 1fr ;
+        grid-template-areas:
+        "item-1 item-1"
+        "item-7 item-4"
+        "item-2 item-3"
+        "item-8 item-6"
+        "item-5 item-5";
+    }
+
+    .item-2 p {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-top: 40px;
+    }
+
+    .item-2 img {
+        position: relative;
+        max-width: 90%;
+        top: auto;
+        left: auto;
+    }
+
+    .item-4 img {
+        position: relative;
+        max-width: 90%;
+        top: auto;
+        left: auto;
+    }
+
+    .item-6, .item-2 {
+        justify-content: center;
+    }
+
+    .item-6 p {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .container {
+        grid-auto-rows: auto;
+        grid-template-areas:
+        "item-1"
+        "item-2"
+        "item-3"
+        "item-4"
+        "item-5"
+        "item-6"
+        "item-7"
+        "item-8";
+    }
+
+    .item-1 {
+        padding: 40px 20px;
+    }
+
+    .item-3 {
+        display: flex;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .item-3 p{
+        position: relative;
+        left: auto;
+        
+    }
+    .item-3 img {
+        position: relative;
+        top: 40px;
+        left: auto;
+        bottom: 0;
+        max-width: 70%;
+    }
+
+    .item-4 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .item-4 h2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        padding-bottom: 20px;
+        
+    }
+
+    .item-4 p {
+        padding-bottom: 10px;
+        max-width: 90%;
+    }
+
+    .item-4 p {
+        position: relative;
+        bottom: auto;
+        left: auto;
+    }
+
+
+    .item-4 img {
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .item-5 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 20px 40px;
+    }
+
+    .item-5 img {
+        position: relative;
+        max-width: 90%;
+        top: auto;
+        left: auto;
+    }
+
+    .item-5 p {
+        position: relative;
+        left: auto;
+        padding-top: 40px;
+    }
+
+  
+
+    .item-8 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+
+    .item-8 img {
+        max-width: 70%;
+        
+    }
+}
