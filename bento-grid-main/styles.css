@@ -10,14 +10,24 @@ img {
     display: block;
 }
 
+:root {
+    --cor-fundo: #f2f2f2;
+    --roxo:#7B2FF7;
+    --lilas: #e5dbff;
+    --amarelo-ouro: #ffe066;
+    --salmao:#fcece4;
+    --branco-padrao:#fff;
+    --preto-fonte: #333;
+}
+
 
 body {
-    background: #f2f2f2;
+    background: var(--cor-fundo);
     font-family: 'DM Sans', sans-serif;
     min-height: 100vh;
     line-height: 1.0;
-    font-size: 18px;
     place-content: center;
+    color:var(--preto-fonte);
 }
 
 /* textos */
@@ -119,8 +129,8 @@ body {
 /* Item 1 */
 
 .item-1 {
-    background: #7B2FF7;
-    color: #fff;
+    background: var(--roxo);
+    color: var(--branco-padrao);
 }
 
 .item-1 h1 {
@@ -131,7 +141,7 @@ body {
 }
 
 .item-1 h1 strong{
-    color: #ffe066;
+    color: var(--amarelo-ouro);
     font-weight: 400;
 }
 
@@ -150,21 +160,21 @@ body {
 /* Item 2 */
 
 .item-2 {
-    background-color: #fff;
+    background-color: var(--branco-padrao);
     position: relative;
 }
 
 .item-2 p{
     padding-top: 20px;
     position: absolute;
-    bottom: 20px;
-    left: 20px
+    inset-block-end: 20px;
+    inset-inline-start: 20px;
 }
 
 .item-2 img {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    inset-block-start: 20px;
+    inset-inline-start: 20px;
     width: 120%;
 }
 
@@ -173,20 +183,20 @@ body {
 /* Item 3 */
 
 .item-3 {
-    background-color: #fccb6b;
+    background-color: var(--amarelo-ouro);
     position: relative;
 }
 
 .item-3 p {
     position: absolute;
-    top: 10px;
-    left: 20px;
+    inset-block-start: 10px;
+    inset-inline-start: 20px;
 }
 
 .item-3 img {
     position: absolute;
     width: 85%;
-    top: 140px;
+    inset-block-start: 140px;
 }
 
 
@@ -194,26 +204,26 @@ body {
 /* Item 4 */
 
 .item-4 {
-    background-color: #e5dbff;
+    background-color: var(--lilas);
     position: relative;
 }
 
 .item-4 h2 {
     position: absolute;
-    top: 40px;
-    left: 20px;
+    inset-block-start: 40px;
+    inset-inline-start: 20px;
 }
 
 .item-4 p {
     position: absolute;
-    bottom: 40px;
-    left: 20px;
+    inset-block-end: 40px;
+    inset-inline-start: 20px;
 }
 
 .item-4 img {
     position: absolute;
-    top: 120px;
-    left: 20px;
+    inset-block-start: 120px;
+    inset-inline-start: 20px;
     width: 150%;
 }
 
@@ -222,13 +232,13 @@ body {
 /* Item 5 */
 
 .item-5 {
-    background-color: #7B2FF7;
+    background-color: var(--roxo);
     flex-direction: row;
     justify-content: space-between;
 }
 
 .item-5 p {
-    color: #fff;
+    color: var(--branco-padrao);
     padding-left: 10px;
 }
 
@@ -241,7 +251,7 @@ body {
 /* Item 6 */
 
 .item-6 {
-    background-color: #fff;
+    background-color: var(--branco-padrao);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -266,7 +276,7 @@ body {
 /* Item 7 */
 
 .item-7 {
-    background-color: #fcece4;
+    background-color: var(--salmao);
 }
 
 .item-7 p {
@@ -274,7 +284,7 @@ body {
 }
 
 .item-7 span {
-    color: #7B2FF7;
+    color: var(--roxo);
     font-style: italic;
 }
 
@@ -286,7 +296,7 @@ body {
 /* Item 8 */
 
 .item-8 {
-    background-color: #fccb6b;
+    background-color: var(--amarelo-ouro);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -319,23 +329,22 @@ body {
 
     .item-2 p {
         position: relative;
-        top: auto;
-        left: auto;
+        inset-inline-start: auto;
         margin-top: 40px;
     }
 
     .item-2 img {
         position: relative;
         max-width: 90%;
-        top: auto;
-        left: auto;
+        inset-block-start: auto;
+        inset-inline-start: auto;
     }
 
     .item-4 img {
         position: relative;
         max-width: 90%;
-        top: auto;
-        left: auto;
+        inset-block-start: auto;
+        inset-inline-start: auto;
     }
 
     .item-6, .item-2 {
@@ -374,14 +383,12 @@ body {
 
     .item-3 p{
         position: relative;
-        left: auto;
+        inset-inline-start: auto;
         
     }
     .item-3 img {
         position: relative;
-        top: 40px;
-        left: auto;
-        bottom: 0;
+        inset-block-start: 40px;
         max-width: 70%;
     }
 
@@ -394,8 +401,8 @@ body {
 
     .item-4 h2 {
         position: relative;
-        top: auto;
-        left: auto;
+        inset-block-start: auto;
+        inset-inline-start: auto;
         padding-bottom: 20px;
         
     }
@@ -407,8 +414,8 @@ body {
 
     .item-4 p {
         position: relative;
-        bottom: auto;
-        left: auto;
+        inset-block-end: auto;
+        inset-inline-start: auto;
     }
 
 
@@ -428,13 +435,10 @@ body {
     .item-5 img {
         position: relative;
         max-width: 90%;
-        top: auto;
-        left: auto;
     }
 
     .item-5 p {
         position: relative;
-        left: auto;
         padding-top: 40px;
     }
 
@@ -450,6 +454,5 @@ body {
 
     .item-8 img {
         max-width: 70%;
-        
     }
 }
