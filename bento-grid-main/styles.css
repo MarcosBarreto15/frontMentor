@@ -77,7 +77,6 @@ body {
 }
 
 
-
 .item-1 { 
   background: var(--roxo); 
   color: var(--branco-padrao); 
@@ -144,14 +143,11 @@ body {
     margin-block-end: 1.25rem;
 }
 
-.item-1 h1 strong {
-    color: var(--branco-padrao);
-    font-weight: 500;
-}
 
-.item-1 h1 strong{
+.item-1 h1 strong {
     color: var(--amarelo-ouro);
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 3.9rem;
 }
 
 .item-1 span {
@@ -402,13 +398,10 @@ body {
         
     }
 
-    .item-4 p {
-        padding-block-end: 0.625rem;
-        max-width: 90%;
-    }
 
     .item-4 p {
         position: relative;
+        max-width: 90%;
         inset-block-end: auto;
         inset-inline-start: auto;
     }
