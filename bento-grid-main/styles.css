@@ -307,7 +307,7 @@ body {
 
 /* Responsividade */
 
-@media (max-width: 960px) { 
+@media (max-width: 60rem) { 
     .container {
         grid-auto-columns: 1fr;
         grid-auto-rows: 0.7fr 1fr ;
@@ -349,7 +349,7 @@ body {
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 48rem){
     .container {
         grid-auto-rows: auto;
         grid-template-areas:
