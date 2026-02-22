@@ -58,7 +58,7 @@ body {
 .container {
     display: grid;
     grid-auto-columns: 1fr;
-    grid-auto-rows: 55px;
+    grid-auto-rows: 3.4375rem;
     gap: 2rem;
     grid-template-areas:
     "item-7 item-1 item-1 item-4"
@@ -71,8 +71,8 @@ body {
     "item-8 item-6 item-5 item-5"
     "item-8 item-6 item-5 item-5"
     "item-8 item-6 item-5 item-5";
-    padding: 20px;
-    max-width: 1080px;
+    padding: 1.25rem;
+    max-width: 67.5rem;
     margin: 1rem auto;
 }
 
@@ -127,8 +127,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 0.625rem;
+    padding: 1.25rem;
     overflow: hidden;
 }
 
@@ -141,7 +141,11 @@ body {
 
 .item-1 h1 {
     text-align: center;
-    margin-block-end: 20px;
+    margin-block-end: 1.25rem;
+}
+
+.item-1 h1 strong {
+    color: var(--branco-padrao);
     font-weight: 500;
 }
 
@@ -155,7 +159,7 @@ body {
 }
 
 .item-1 p {
-    padding-block-start: 10px;
+    padding-block-start: 0.625rem;
 }
 
 .item-1 img {
@@ -170,14 +174,14 @@ body {
 
 .item-2 p {
     position: absolute;
-    inset-block-end: 20px;
-    inset-inline-start: 20px;
+    inset-block-end: 1.25rem;
+    inset-inline-start: 1.25rem;
 }
 
 .item-2 img {
     position: absolute;
-    inset-block-start: 20px;
-    inset-inline-start: 20px;
+    inset-block-start: 1.25rem;
+    inset-inline-start: 1.25rem;
     width: 120%;
 }
 
@@ -191,14 +195,14 @@ body {
 
 .item-3 p {
     position: absolute;
-    inset-block-start: 10px;
-    inset-inline-start: 20px;
+    inset-block-start: 0.625rem;
+    inset-inline-start: 1.25rem;
 }
 
 .item-3 img {
     position: absolute;
     width: 85%;
-    inset-block-start: 140px;
+    inset-block-start: 8.75rem;
 }
 
 
@@ -217,14 +221,14 @@ body {
 
 .item-4 p {
     position: absolute;
-    inset-block-end: 40px;
-    inset-inline-start: 20px;
+    inset-block-end: 2.5rem;
+    inset-inline-start: 1.25rem;
 }
 
 .item-4 img {
     position: absolute;
-    inset-block-start: 120px;
-    inset-inline-start: 20px;
+    inset-block-start: 7.5rem;
+    inset-inline-start: 1.25rem;
     width: 150%;
 }
 
@@ -238,7 +242,7 @@ body {
 }
 
 .item-5 p {
-    padding-inline-start: 10px;
+    padding-inline-start: 0.625rem;
 }
 
 
@@ -259,11 +263,11 @@ body {
 
 .item-6 span {
     text-align: left;
-    padding-block-end: 10px;
+    padding-block-end: 0.625rem;
 }
 
 .item-6 p {
-    margin-block-end: 35px;
+    margin-block-end: 2.18rem;
 }
 
 .item-6 img {
@@ -273,7 +277,7 @@ body {
 /* Item 7 */
 
 .item-7 p {
-    margin-block-end: 20px;
+    margin-block-end: 1.25rem;
 }
 
 .item-7 span {
@@ -296,8 +300,7 @@ body {
 }
 
 .item-8 p {
-    padding-block-start: 10px;
-    margin-block-end: 20px;
+    padding-block-start: 0.625rem;
 }
 
 .item-8 img {
@@ -322,7 +325,7 @@ body {
     .item-2 p {
         position: relative;
         inset-inline-start: auto;
-        margin-block-start: 40px;
+        margin-block-start: 2.5rem;
     }
 
     .item-2 img {
@@ -344,7 +347,7 @@ body {
     }
 
     .item-6 p {
-        margin-block-start: 20px;
+        margin-block-start: 1.25rem;
     }
 }
 
@@ -364,7 +367,7 @@ body {
     }
 
     .item-1 {
-        padding: 40px 20px;
+        padding: 2.5rem 1.25rem;
     }
 
     .item-3 {
@@ -380,7 +383,7 @@ body {
     }
     .item-3 img {
         position: relative;
-        inset-block-start: 40px;
+        inset-block-start: 2.5rem;
         max-width: 70%;
     }
 
@@ -395,12 +398,12 @@ body {
         position: relative;
         inset-block-start: auto;
         inset-inline-start: auto;
-        padding-block-end: 20px;
+        padding-block-end: 1.25rem;
         
     }
 
     .item-4 p {
-        padding-block-end: 10px;
+        padding-block-end: 0.625rem;
         max-width: 90%;
     }
 
@@ -413,7 +416,7 @@ body {
 
     .item-4 img {
         max-width: 100%;
-        padding-block-end: 20px;
+        padding-block-end: 1.25rem;
     }
 
     .item-5 {
@@ -421,7 +424,7 @@ body {
         align-items: center;
         text-align: center;
         justify-content: center;
-        padding: 20px 40px;
+        padding: 1.25rem 2.5rem;
     }
 
     .item-5 img {
@@ -431,7 +434,7 @@ body {
 
     .item-5 p {
         position: relative;
-        padding-block-start: 40px;
+        padding-block-start: 2.5rem;
     }
 
   
