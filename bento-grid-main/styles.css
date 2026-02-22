@@ -78,37 +78,48 @@ body {
 
 
 
-.item-1 {
-    grid-area: item-1;
+.item-1 { 
+  background: var(--roxo); 
+  color: var(--branco-padrao); 
+  grid-area: item-1; 
 }
 
-.item-2 {
-    grid-area: item-2;
+.item-2 { 
+  background: var(--branco-padrao); 
+  grid-area: item-2; 
 }
 
-.item-3 {
-    grid-area: item-3;
+.item-3 { 
+  background: var(--amarelo-ouro); 
+  grid-area: item-3; 
 }
 
-.item-4 {
-    grid-area: item-4;
+.item-4 { 
+  background: var(--lilas); 
+  grid-area: item-4; 
 }
 
-.item-5 {
-    grid-area: item-5;
+.item-5 { 
+  background: var(--roxo); 
+  color: var(--branco-padrao); 
+  grid-area: item-5; 
 }
 
-.item-6 {
-    grid-area: item-6;
+.item-6 { 
+  background: var(--branco-padrao); 
+  grid-area: item-6; 
 }
 
-.item-7 {
-    grid-area: item-7;
+.item-7 { 
+  background: var(--salmao); 
+  grid-area: item-7; 
 }
 
-.item-8 {
-    grid-area: item-8;
+.item-8 { 
+  background: var(--amarelo-ouro); 
+  grid-area: item-8; 
 }
+
 
 
 .item {
@@ -128,13 +139,7 @@ body {
 
 /* Item 1 */
 
-.item-1 {
-    background: var(--roxo);
-    color: var(--branco-padrao);
-}
-
 .item-1 h1 {
-    
     text-align: center;
     margin-block-end: 20px;
     font-weight: 500;
@@ -160,7 +165,6 @@ body {
 /* Item 2 */
 
 .item-2 {
-    background-color: var(--branco-padrao);
     position: relative;
 }
 
@@ -182,7 +186,6 @@ body {
 /* Item 3 */
 
 .item-3 {
-    background-color: var(--amarelo-ouro);
     position: relative;
 }
 
@@ -203,7 +206,6 @@ body {
 /* Item 4 */
 
 .item-4 {
-    background-color: var(--lilas);
     position: relative;
 }
 
@@ -231,13 +233,11 @@ body {
 /* Item 5 */
 
 .item-5 {
-    background-color: var(--roxo);
     flex-direction: row;
     justify-content: space-between;
 }
 
 .item-5 p {
-    color: var(--branco-padrao);
     padding-inline-start: 10px;
 }
 
@@ -250,7 +250,6 @@ body {
 /* Item 6 */
 
 .item-6 {
-    background-color: var(--branco-padrao);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -273,10 +272,6 @@ body {
 
 /* Item 7 */
 
-.item-7 {
-    background-color: var(--salmao);
-}
-
 .item-7 p {
     margin-block-end: 20px;
 }
@@ -294,7 +289,6 @@ body {
 /* Item 8 */
 
 .item-8 {
-    background-color: var(--amarelo-ouro);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,7 +395,7 @@ body {
         position: relative;
         inset-block-start: auto;
         inset-inline-start: auto;
-        padding-bottom: 20px;
+        padding-block-end: 20px;
         
     }
 
