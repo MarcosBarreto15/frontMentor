@@ -35,7 +35,7 @@ body {
 /* textos */
 
 .eg-text, .g-text, .med-text { 
-    font-weight: 500; 
+    font-weight: 600; 
 }
 
 .eg-text {
@@ -52,7 +52,7 @@ body {
 
 .p-text {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 
@@ -140,7 +140,7 @@ body {
 
 .item-1 h1 strong {
     color: var(--amarelo-ouro);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 3.9rem;
 }
 
@@ -349,14 +349,13 @@ body {
     }
 
     .item-3, .item-8 {
-        display: flex;
         text-align: left;
         align-items: flex-start;
     }
 
-    .item-3 p, .item-3 img{
+    .item-3 p, .item-3 img, .item-4 h2, .item-4 p {
         position: relative;
-        inset-inline-start: auto;
+        inset: auto;
         
     }
     .item-3 img {
@@ -365,16 +364,11 @@ body {
     }
 
     .item-4 {
-        display: flex;
         text-align: center;
         align-items: center;
         justify-content: space-around;
     }
 
-    .item-4 h2, .item-4 p {
-        position: relative;
-        inset: auto;
-    }
 
     .item-4 h2 {
         inset-inline-start: auto;
@@ -392,31 +386,30 @@ body {
         padding-block-end: 1.25rem;
     }
 
-    .item-5 {
+    .item-5, .item-8 {
         flex-direction: column;
+    }
+
+    .item-5 {
         align-items: center;
         text-align: center;
         justify-content: center;
         padding: 1.25rem 2.5rem;
     }
 
-    .item-5 img {
+    .item-5 img, .item-5 p {
         position: relative;
+    }
+
+    .item-5 img {
         max-width: 90%;
     }
 
     .item-5 p {
-        position: relative;
         padding-block-start: 2.5rem;
     }
 
   
-
-    .item-8 {
-        flex-direction: column;
-    }
-
-
     .item-8 img {
         max-width: 70%;
     }
