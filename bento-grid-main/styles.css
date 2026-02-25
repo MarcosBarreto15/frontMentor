@@ -56,8 +56,8 @@ body {
 .med-text {
     font-size: var(--fs-lg);
     font-weight: 600;
-    letter-spacing: -1px;
-    word-spacing: -1px;
+    letter-spacing: -0.0625rem;
+    word-spacing: -0.0625rem;
     line-height: 0.9;
 }
 
@@ -207,7 +207,7 @@ body {
 
 .item-3 img {
     position: relative;
-    top: 40px;
+    top: 2.5rem;
     max-width: 70%;
 
 }
